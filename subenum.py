@@ -31,7 +31,7 @@ pattern = rf"\b[\w.-]+\.{re.escape(domain)}\b"
 # Regex to get the subdomains
 matches = re.findall(pattern, crt_html)
 
-# Remove duplicates
+# Remove duplicates 
 unique_matches = list(set(matches))
 
 for sub in unique_matches:
